@@ -1,0 +1,88 @@
+#hobbyt-map {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  #hobbyt-map {
+    height: 75vh;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1900px) {
+  #hobbyt-map {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 1901px) {
+  #hobbyt-map {
+    height: 25vh;
+  }
+}
+
+#hobbyt-map .leaflet-control-attribution {
+  opacity: 0.4;
+}
+
+#hobbyt-map .user-position-marker img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
+
+#hobbyt-map .user-position-marker .pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background: #1773ff;
+  animation: pulse 7s ease-out infinite;
+}
+
+.map-wrapper {
+  position: relative;
+}
+
+.map-wrapper .relocate-button {
+  display: block;
+  content: "my_location";
+  bottom: 0;
+  padding: 1em;
+  margin: 10px;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.map-wrapper .relocate-button:hover {
+  background: #f4f4f4;
+}
+
+.map-wrapper .relocate-button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,3 +1,2 @@
-Hobby-Online
+# hobby-online
 
-React-app that finds your available hobbies near by.

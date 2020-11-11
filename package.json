@@ -1,0 +1,40 @@
+{
+  "name": "hobbyonline",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "leaflet": "^1.4.0",
+    "popper.js": "^1.14.7",
+    "rc-slider": "^8.6.8",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
+    "react-router": "^4.4.0",
+    "react-router-dom": "^4.4.0",
+    "react-scripts": "2.1.8",
+    "react-slugify": "^1.2.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "thunk": "0.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
+  }
+}
